@@ -28,3 +28,8 @@ function smash (words) {
 function sum(numbers) {
   return numbers.reduce((a, b) => a + b, 0);
 }
+
+
+function greet(name){
+  return `Hello, ${name} how are you doing today?`
+}
