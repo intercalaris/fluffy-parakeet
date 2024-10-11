@@ -3,6 +3,9 @@ function descendingOrder(n){
   return Number(n.toString().split('').sort((a,b) => (b-a)).join(''))
 }
 
+function makeNegative(num) {
+  return num < 0 ? num : -num;
+}
 
 function doubleInteger(i) {
   // i will be an integer. Double it and return it.
