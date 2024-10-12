@@ -1,4 +1,14 @@
-# Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+function getCount(str) {
+  const vowArr = ['a', 'e', 'i', 'o', 'u'];
+  let vowCount = 0;
+  for (i=0; i<5; i++) {
+    for (j=0; j<str.length; j++) {
+      str[j] === vowArr[i] ? vowCount++ : null;
+    }
+  }
+  return vowCount;
+}
+
 function descendingOrder(n){
   return Number(n.toString().split('').sort((a,b) => (b-a)).join(''))
 }
