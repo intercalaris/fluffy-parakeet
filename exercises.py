@@ -9,6 +9,10 @@ function getCount(str) {
   return vowCount;
 }
 
+function noSpace(x) {
+  return x.replaceAll(' ', '');
+}
+
 function descendingOrder(n){
   return Number(n.toString().split('').sort((a,b) => (b-a)).join(''))
 }
