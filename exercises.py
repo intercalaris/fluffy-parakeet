@@ -9,6 +9,10 @@ function getCount(str) {
   return vowCount;
 }
 
+function booleanToString(b){
+  return b.toString()
+}
+
 function noSpace(x) {
   return x.replaceAll(' ', '');
 }
