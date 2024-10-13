@@ -8,7 +8,9 @@ function getCount(str) {
   }
   return vowCount;
 }
-
+var isSquare = function(n){
+  return Number.isInteger(Math.sqrt(n)); 
+}
 function booleanToString(b){
   return b.toString()
 }
