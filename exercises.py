@@ -8,6 +8,12 @@ function getCount(str) {
   }
   return vowCount;
 }
+
+function removeChar(str){
+  str = str.split('').slice(1, str.length-1).join('');
+  return str;
+};
+
 function isTriangle(a,b,c) {
   if (a + b > c && a + c > b && b + c > a && c + b > a ) {
     return true;
