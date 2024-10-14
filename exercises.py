@@ -1,5 +1,14 @@
 def string_to_number(s):
     return int(s)
+
+def is_pangram(st):
+    if len(''.join((st).split(' '))) < 26:
+        return False
+    alph = 'abcdefghijklmnopqrstuvwxyz'
+    for char in range(0, len(alph)):
+        if alph[char] not in st.lower():
+            return False
+    return True
     
 class Solution {
     /**
