@@ -1,3 +1,34 @@
+
+class Solution {
+    /**
+     * @param {string} s
+     * @param {string} t
+     * @return {boolean}
+     */
+    isAnagram(s, t) {
+        const uniq_s = {};
+        const uniq_t = {};
+        for (let i = 0; i < s.length; i++) {
+            if (s[i] in uniq_s) {
+                uniq_s[s[i]] += 1;
+            } else {
+                uniq_s[s[i]] = 1;
+            }
+        }
+
+        for (let i = 0; i < t.length; i++) {
+            if (t[i] in uniq_t) {
+                uniq_t[t[i]] += 1;
+            } else {
+                uniq_t[t[i]] = 1;
+            } 
+        }
+        return Object.entries(uniq_t).sort().toString() === 
+        Object.entries(uniq_s).sort().toString();
+    }
+}
+
+
 function getCount(str) {
   const vowArr = ['a', 'e', 'i', 'o', 'u'];
   let vowCount = 0;
