@@ -1,5 +1,15 @@
 def string_to_number(s):
     return int(s)
+function isPangram(string){
+  const alph = 'abcdefghijklmnopqrstuvwxyz';
+  string = string.toLowerCase();
+  for (let i = 0; i < alph.length; i++) {
+    if (!string.includes(alph[i])) {
+      return false;
+    }
+  }
+  return true;
+}
 
 def is_pangram(st):
     if len(''.join((st).split(' '))) < 26:
