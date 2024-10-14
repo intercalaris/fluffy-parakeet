@@ -9,6 +9,23 @@ function getCount(str) {
   return vowCount;
 }
 
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        uniq_s_dict = {}
+        uniq_t_dict = {}
+        for i in range(0, len(s)):
+            if s[i] in uniq_s_dict:
+                uniq_s_dict[s[i]] += 1
+            else:
+                uniq_s_dict[s[i]] = 1
+        for i in range(0, len(t)):
+            if t[i] in uniq_t_dict:
+                uniq_t_dict[t[i]] += 1
+            else:
+                uniq_t_dict[t[i]] = 1
+        return uniq_s_dict == uniq_t_dict
+
+
 def digital_root(n):
     acc = 0
     if n < 10:
