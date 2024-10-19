@@ -1,6 +1,6 @@
 def string_to_number(s):
     return int(s)
-function isPangram(string){
+function isPangram(string){ 
   const alph = 'abcdefghijklmnopqrstuvwxyz';
   string = string.toLowerCase();
   for (let i = 0; i < alph.length; i++) {
