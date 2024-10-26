@@ -6,7 +6,10 @@ def solution(number):
         if i % 3 == 0 or i % 5 == 0:
             sum+= i;
     return sum
-
+    
+function reverseWords(str){
+  return str.split(' ').reverse().join(' '); // reverse those words
+}
 function solution(number) {
   if (number < 0) return 0;
 
