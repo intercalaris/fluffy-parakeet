@@ -138,7 +138,7 @@ var isSquare = function(n){
 }
 function booleanToString(b){
   return b.toString()
-}
+} 
 
 function maps(x){
   return x.map((el) => el *2)
