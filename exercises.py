@@ -81,8 +81,6 @@ class Solution {
         Object.entries(uniq_s).sort().toString();
     }
 }
-
-
 function getCount(str) {
   const vowArr = ['a', 'e', 'i', 'o', 'u'];
   let vowCount = 0;
@@ -93,6 +91,8 @@ function getCount(str) {
   }
   return vowCount;
 }
+
+
 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
