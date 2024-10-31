@@ -110,7 +110,6 @@ class Solution:
                 uniq_t_dict[t[i]] = 1
         return uniq_s_dict == uniq_t_dict
 
-
 def digital_root(n):
     acc = 0
     if n < 10:
@@ -119,6 +118,7 @@ def digital_root(n):
         for i in range(0, len(str(n))):
             acc += int(str(n)[i])
         return digital_root(acc)
+
 
 function removeChar(str){
   str = str.split('').slice(1, str.length-1).join('');
