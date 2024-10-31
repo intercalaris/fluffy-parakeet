@@ -52,7 +52,7 @@ def is_pangram(st):
         if alph[char] not in st.lower():
             return False
     return True
-    
+ 
 class Solution {
     /**
      * @param {string} s
@@ -132,7 +132,33 @@ function isTriangle(a,b,c) {
     return false;
     }
 }
-
+def neutralise(s1, s2):
+    str = ''
+    for i in range(len(s1)):
+        if s1[i] == '+' and s2[i] == '+':
+            str = str + '+'
+        elif s1[i] == '+' and s2[i] == '-' or s2[i] == '+' and s1[i] == '-':
+            str = str + '0'
+        elif s1[i] == '-' and s2[i] == '-':
+            str = str + '-'
+    return str
+function neutralise(s1, s2) {
+    let  str = ''
+    for (let i = 0; i < s1.length; i++) {
+              if (s1[i] == '+' && s2[i] == '+') {
+            str = str + '+';
+        }
+        else if (s1[i] == '+' && s2[i] == '-' || s2[i] == '+' && s1[i] == '-') {
+          str = str + '0';
+        }
+            
+        else if (s1[i] == '-' && s2[i] == '-'){
+          str = str + '-';
+        }
+    }
+      
+    return str;
+}
 var isSquare = function(n){
   return Number.isInteger(Math.sqrt(n)); 
 }
