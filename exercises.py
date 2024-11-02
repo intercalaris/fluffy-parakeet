@@ -1,3 +1,20 @@
+function nbYear(p0, percent, aug, p) {
+  let years = 0;
+  for (let currPop = p0; currPop < p; currPop += Math.floor(currPop * percent/100 + aug)) {
+    years++;
+  }
+  return years;
+}
+import math
+def nb_year(p0, percent, aug, p):
+    years = 0;
+    curr_pop = p0;
+    while curr_pop < p:
+        curr_pop += math.floor(curr_pop * percent/100) + aug
+        years += 1
+    return years
+
+
 def solution(number):
     if number < 0:
         return 0
