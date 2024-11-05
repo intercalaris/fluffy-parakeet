@@ -2,7 +2,7 @@ function nbYear(p0, percent, aug, p) {
   let years = 0;
   for (let currPop = p0; currPop < p; currPop += Math.floor(currPop * percent/100) + aug) {
     years++;
-  }
+  } 
   return years;
 }
 import math
