@@ -5,6 +5,7 @@ function nbYear(p0, percent, aug, p) {
   } 
   return years;
 }
+
 import math
 def nb_year(p0, percent, aug, p):
     years = 0;
@@ -13,6 +14,26 @@ def nb_year(p0, percent, aug, p):
         curr_pop += math.floor(curr_pop * percent/100) + aug
         years += 1
     return years
+
+
+function dnaStrand(dna){
+  let dnaArr = dna.split('');
+  for (let i = 0; i < dnaArr.length; i++) {
+    if (dnaArr[i] === 'A') {
+      dnaArr[i] = 'T';
+    }
+    else if (dnaArr[i] === 'T') {
+      dnaArr[i] = 'A';
+    }
+    else if (dnaArr[i] === 'G') {
+      dnaArr[i] = 'C';
+    }
+    else if (dnaArr[i] === 'C') {
+      dnaArr[i] = 'G';
+    }
+  }
+  return dnaArr.join('');
+}
 
 
 def solution(number):
