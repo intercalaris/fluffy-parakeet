@@ -35,10 +35,17 @@ function dnaStrand(dna){
   return dnaArr.join('');
 }
 
+def lovefunc( flower1, flower2 ):
+    return (flower1 % 2 == 0 and flower2 % 2 != 0 or flower2 % 2 == 0 and flower1 % 2 != 0) 
+function lovefunc(flower1, flower2){
+    return (flower1 % 2 === 0 && flower2 % 2 !== 0 || flower2 % 2 === 0 && flower1 % 2 !== 0) 
+}
 
 def solution(number):
     if number < 0:
         return 0
+
+  
     sum = 0
     for i in range(0, number, 1):
         if i % 3 == 0 or i % 5 == 0:
