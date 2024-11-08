@@ -16,27 +16,11 @@ def nb_year(p0, percent, aug, p):
     return years
 
 function longest(s1, s2) {
-  let alphSet = new Set();
-  for (i in s1) {
-    alphSet.add(s1[i])
-  }
-  for (i in s2) {
-    alphSet.add(s2[i])
-  }
-  let alphArr = Array.from(alphSet);
-  return alphArr.sort().join('');
+  return Array.from(new Set(s1 + s2)).sort().join('');
 }
 
 def longest(a1, a2):
-    alph_set = set()
-    for i in a1:
-        alph_set.add(i)
-    for i in a2:
-        alph_set.add(i)
-    alph_list = list(alph_set)
-    alph_list.sort()
-    return ''.join(alph_list)
-    
+    return "".join(sorted(set(a1 + a2)))
     
 
 function dnaStrand(dna){
