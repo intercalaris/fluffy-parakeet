@@ -26,6 +26,7 @@ function longest(s1, s2) {
   let alphArr = Array.from(alphSet);
   return alphArr.sort().join('');
 }
+
 def longest(a1, a2):
     alph_set = set()
     for i in a1:
