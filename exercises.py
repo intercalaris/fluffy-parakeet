@@ -20,6 +20,18 @@ function quadrant(x, y) {
     return 4;
   }
 }
+def quadrant(x, y):
+  if x > 0 and y > 0: 
+    return 1
+  
+  elif x < 0 and y > 0:
+    return 2
+  
+  elif x < 0 and y < 0:
+    return 3
+  
+  elif x > 0 and y < 0:
+    return 4
 
 import math
 def nb_year(p0, percent, aug, p):
