@@ -184,6 +184,11 @@ function isTriangle(a,b,c) {
     return false;
     }
 }
+
+def approx_equals(a, b):
+    return abs(a - b) <= 0.001
+
+
 def neutralise(s1, s2):
     str = ''
     for i in range(len(s1)):
