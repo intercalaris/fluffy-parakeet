@@ -6,6 +6,21 @@ function nbYear(p0, percent, aug, p) {
   return years;
 }
 
+function quadrant(x, y) {
+  if (x > 0 && y > 0) {
+    return 1;
+  }
+  else if (x < 0 && y > 0) {
+    return 2;
+  }
+  else if (x < 0 && y < 0) {
+    return 3;
+  }
+  else if (x > 0 && y < 0) {
+    return 4;
+  }
+}
+
 import math
 def nb_year(p0, percent, aug, p):
     years = 0;
